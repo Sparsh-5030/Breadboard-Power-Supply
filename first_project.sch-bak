@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5FB46792
+P 3800 2850
+F 0 "J1" H 3857 3175 50  0000 C CNN
+F 1 "Barrel_Jack" H 3857 3084 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 3850 2810 50  0001 C CNN
+F 3 "~" H 3850 2810 50  0001 C CNN
+F 4 "CP-102AH-ND" H 3800 2850 50  0001 C CNN "DigiKey"
+	1    3800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AZ1117-3.3 U2
+U 1 1 5FB49A49
+P 5700 3500
+F 0 "U2" H 5700 3833 50  0000 C CNN
+F 1 "3.3V" H 5700 3742 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5700 3750 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5700 3500 50  0001 C CNN
+F 4 "AZ1117CH-3.3TRG1DICT-ND" H 5700 3651 50  0000 C CNN "DigiKey"
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FB4A78E
+P 5000 2300
+F 0 "C1" H 5092 2391 50  0000 L CNN
+F 1 "10uF" H 5092 2300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5000 2300 50  0001 C CNN
+F 3 "~" H 5000 2300 50  0001 C CNN
+F 4 "1276-6495-1-ND" H 5092 2209 50  0000 L CNN "DigiKey"
+	1    5000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5FB4B179
+P 5000 3600
+F 0 "C2" H 5092 3691 50  0000 L CNN
+F 1 "10uF" H 5092 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5000 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+F 4 "1276-6495-1-ND" H 5092 3509 50  0000 L CNN "DigiKey"
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5FB4B8AB
+P 6500 2350
+F 0 "C3" H 6592 2441 50  0000 L CNN
+F 1 "22uF" H 6592 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6500 2350 50  0001 C CNN
+F 3 "~" H 6500 2350 50  0001 C CNN
+F 4 "399-C1210C226J8RAC7800CT-ND" H 5900 2200 50  0000 L CNN "DigiKey"
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FB4D071
+P 5700 3900
+F 0 "#PWR0102" H 5700 3650 50  0001 C CNN
+F 1 "GND" H 5705 3727 50  0000 C CNN
+F 2 "" H 5700 3900 50  0001 C CNN
+F 3 "" H 5700 3900 50  0001 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FB4D4D0
+P 4350 3250
+F 0 "#PWR0103" H 4350 3000 50  0001 C CNN
+F 1 "GND" H 4355 3077 50  0000 C CNN
+F 2 "" H 4350 3250 50  0001 C CNN
+F 3 "" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2750 4150 2750
+Wire Wire Line
+	4150 2750 4150 2050
+Wire Wire Line
+	4150 2050 4750 2050
+Wire Wire Line
+	5000 2050 5000 2200
+Connection ~ 5000 2050
+Wire Wire Line
+	5000 2050 5300 2050
+Wire Wire Line
+	5900 2050 6500 2050
+Wire Wire Line
+	6500 3900 6500 3700
+Wire Wire Line
+	5700 3900 5700 3800
+Connection ~ 5700 3900
+Wire Wire Line
+	5000 3700 5000 3900
+Wire Wire Line
+	5000 3900 5700 3900
+Wire Wire Line
+	4100 2950 4300 2950
+Wire Wire Line
+	4350 2950 4350 3250
+Wire Wire Line
+	4750 2050 4750 3500
+Wire Wire Line
+	4750 3500 5000 3500
+Connection ~ 4750 2050
+Wire Wire Line
+	4750 2050 5000 2050
+Wire Wire Line
+	5700 3900 6500 3900
+Connection ~ 5000 3500
+Wire Wire Line
+	5600 2200 5600 2350
+$Comp
+L Regulator_Linear:AZ1117-5.0 U1
+U 1 1 5FB475C8
+P 5600 2050
+F 0 "U1" H 5600 2383 50  0000 C CNN
+F 1 "5V" H 5600 2292 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5600 2300 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5600 2050 50  0001 C CNN
+F 4 "AZ1117IH-5.0TRG1DICT-ND" H 5600 2201 50  0000 C CNN "DigiKey"
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FB5F708
+P 4300 2950
+F 0 "#FLG0101" H 4300 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3123 50  0000 C CNN
+F 2 "" H 4300 2950 50  0001 C CNN
+F 3 "~" H 4300 2950 50  0001 C CNN
+	1    4300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FB5FF95
+P 4150 2050
+F 0 "#FLG0102" H 4150 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 2223 50  0000 C CNN
+F 2 "" H 4150 2050 50  0001 C CNN
+F 3 "~" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 2050
+Wire Wire Line
+	5000 3500 5400 3500
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 2950 4350 2950
+$Comp
+L Device:LED D1
+U 1 1 5FB68A72
+P 8100 2050
+F 0 "D1" H 8093 1795 50  0000 C CNN
+F 1 "LED" H 8093 1886 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8100 2050 50  0001 C CNN
+F 3 "~" H 8100 2050 50  0001 C CNN
+F 4 "732-5007-ND" H 8100 2050 50  0001 C CNN "DigiKey"
+F 5 ".." H 8100 2050 50  0001 C CNN "Digikey"
+	1    8100 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even Header1
+U 1 1 5FB7522C
+P 7200 2050
+F 0 "Header1" H 7250 2267 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7250 2176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7200 2050 50  0001 C CNN
+F 3 "~" H 7200 2050 50  0001 C CNN
+	1    7200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2050 6900 2050
+Connection ~ 6500 2050
+Wire Wire Line
+	6500 3500 6000 3500
+$Comp
+L Device:C_Small C4
+U 1 1 5FB4C09A
+P 6500 3600
+F 0 "C4" H 6592 3691 50  0000 L CNN
+F 1 "22uF" H 6592 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6500 3600 50  0001 C CNN
+F 3 "~" H 6500 3600 50  0001 C CNN
+F 4 "399-C1210C226J8RAC7800CT-ND" H 6000 3450 50  0000 L CNN "DigiKey"
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 3500
+Wire Wire Line
+	6900 2050 6900 1750
+Wire Wire Line
+	6900 1750 7700 1750
+Wire Wire Line
+	7700 1750 7700 2050
+Connection ~ 6900 2050
+Wire Wire Line
+	6900 2050 7000 2050
+Wire Wire Line
+	7000 3500 6800 3500
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even Header2
+U 1 1 5FB7671D
+P 7200 3500
+F 0 "Header2" H 7250 3717 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7250 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3500 6800 3100
+Wire Wire Line
+	7500 3100 7500 3500
+Wire Wire Line
+	6800 3100 7500 3100
+Connection ~ 6800 3500
+Wire Wire Line
+	6800 3500 6500 3500
+Wire Wire Line
+	7500 3600 7500 3900
+Wire Wire Line
+	7500 3900 7000 3900
+Connection ~ 6500 3900
+Wire Wire Line
+	7000 3600 7000 3900
+Connection ~ 7000 3900
+Wire Wire Line
+	7000 3900 6500 3900
+Wire Wire Line
+	6500 2050 6500 2250
+$Comp
+L Device:R R1
+U 1 1 5FB8B442
+P 8700 2050
+F 0 "R1" V 8493 2050 50  0000 C CNN
+F 1 "1K" V 8584 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8630 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8700 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FB92DFA
+P 8700 3500
+F 0 "R2" V 8493 3500 50  0000 C CNN
+F 1 "1K" V 8584 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8630 3500 50  0001 C CNN
+F 3 "~" H 8700 3500 50  0001 C CNN
+	1    8700 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2000 8250 2050
+Wire Wire Line
+	8250 2050 8550 2050
+Connection ~ 8250 2050
+Wire Wire Line
+	7500 2050 7700 2050
+Connection ~ 7700 2050
+Wire Wire Line
+	7700 2050 7950 2050
+Wire Wire Line
+	8850 2050 8850 2900
+$Comp
+L power:GND #PWR0104
+U 1 1 5FB97BA0
+P 9350 3050
+F 0 "#PWR0104" H 9350 2800 50  0001 C CNN
+F 1 "GND" H 9355 2877 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2900 9350 2900
+Wire Wire Line
+	9350 2900 9350 3050
+Wire Wire Line
+	8850 2900 8850 3500
+Connection ~ 8850 2900
+$Comp
+L power:GND #PWR0101
+U 1 1 5FB3727E
+P 5600 2500
+F 0 "#PWR0101" H 5600 2250 50  0001 C CNN
+F 1 "GND" H 5605 2327 50  0000 C CNN
+F 2 "" H 5600 2500 50  0001 C CNN
+F 3 "" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 2200
+Wire Wire Line
+	5000 2200 5000 2300
+Wire Wire Line
+	6500 2450 6500 2500
+Wire Wire Line
+	6500 2500 5600 2500
+Wire Wire Line
+	5600 2500 5000 2500
+Wire Wire Line
+	5000 2500 5000 2400
+Connection ~ 5600 2500
+Wire Wire Line
+	5600 2350 5600 2500
+Connection ~ 5600 2350
+Wire Wire Line
+	7500 2150 7500 2500
+Wire Wire Line
+	7500 2500 7000 2500
+Connection ~ 6500 2500
+Wire Wire Line
+	7000 2150 7000 2500
+Connection ~ 7000 2500
+Wire Wire Line
+	7000 2500 6500 2500
+$Comp
+L Device:LED D2
+U 1 1 5FB3B609
+P 8200 3500
+F 0 "D2" H 8193 3245 50  0000 C CNN
+F 1 "LED" H 8193 3336 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8200 3500 50  0001 C CNN
+F 3 "~" H 8200 3500 50  0001 C CNN
+F 4 "732-5007-ND" H 8200 3500 50  0001 C CNN "DigiKey"
+F 5 ".." H 8200 3500 50  0001 C CNN "Digikey"
+	1    8200 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8550 3500 8350 3500
+Wire Wire Line
+	8050 3500 7500 3500
+Connection ~ 7500 3500
+$EndSCHEMATC
